@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainPage</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="content">
+        <nav>
+          <h1>ELITE</h1>
+          <div class="ref">
+            <a href="index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About Us</a>
+          </div>
+        </nav>
+      </header>
+      <div class="vide">
+        <video autoplay muted loop id="vid">
+          <source src="welite.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <main class="hero-section">
+        <div class="res">Resources</div>
+        <div class="resources">
+          <div class="card"><a href="./resource/Docker.pdf" download><img src="./images/Docker.png"></a></div>
+          <div class="card"><a href="./resource/MERN STACK ROADMAP.pdf" download><img src="./images/mern_new.webp"></a></div>
+          <div class="card"><a href="Docker.pdf" download><img src="./images/dsa_new.png"></a></div>
+          <div class="card"><a href="Docker.pdf" download><img src="./images/figma_new.png"></a></div>
+          <div class="card"><a href="Docker.pdf" download><img src="./images/Python.webp"></a></div>
+          <div class="card"><a href="Docker.pdf" download><img src="./images/web_new.jpeg"></a></div>
+        </div>
+      </main>
+      <div class="footer">
+        <div class="wrapper">
+            <div class="itemLeft item1"><a href="">How do I find internships ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemLeft item2"><a href="">What should I include in my resume ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemLeft item3"><a href="">What are the best career options available ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemLeft item4"><a href="">Python or Java what to learn first ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemLeft item5"><a href="">Is DSA mandatory ? or Development is enough !</a><i class="fa fa-external-link"></i></div>
+            <div class="itemLeft item6"><a href="">what is DevOps exactly ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemLeft item7"><a href="">Node Js vs Spring for the backend ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemLeft item8"><a href="">Is competitive programming dead ?</a><i class="fa fa-external-link"></i></div>
+          </div>
+          <div class="wrapper">
+            <div class="itemRight item1"><a href="">How Tutorial hell spoils you !</a><i class="fa fa-external-link"></i></div>
+            <div class="itemRight item2"><a href="">Communication = Job ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemRight item3"><a href="">DSA vs CP know the difference !</a><i class="fa fa-external-link"></i></div>
+            <div class="itemRight item4"><a href="">Cold mailing can help you get Internships ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemRight item5"><a href="">What is Kubernetes ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemRight item6"><a href="">FAANG! The untold reality .</a><i class="fa fa-external-link"></i></div>
+            <div class="itemRight item7"><a href="">How to win Hackathons ?</a><i class="fa fa-external-link"></i></div>
+            <div class="itemRight item8"><a href="">What is Docker ?</a><i class="fa fa-external-link"></i></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var video = document.getElementById('myVideo');
+        video.playbackRate = 0.5; 
+      </script>
+  </body>
+</html>
