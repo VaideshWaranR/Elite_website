@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div id="form-container" class="form-container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="cdbb52ca-7085-4b2b-b48d-3a5bf3acd0bd"
+        />
+        <input type="text" placeholder="name" name="name" required />
+        <input type="email" placeholder="email" name="email" required />
+        <textarea name="message" placeholder="message" required></textarea>
+
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
+  </body>
 </html>
