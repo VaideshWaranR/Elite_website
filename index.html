@@ -1,69 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     /* including font awesome library */
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-</head>
-<body>
-    <div class="blocks-container" id="blocks-container">
+    <title>Elite</title>
+  </head>
+  <body>
+    <div>
+      <div class="blocks-container" id="blocks-container">
         <div id="blocks"></div>
-    </div>
-    <div class="hero">
-    <div class="hero-section">
-        <div class="cont">
+      </div>
+      <div class="hero">
+        <div class="hero-section">
+          <div class="cont">
             <span class="mirror" title="Emerging">E</span>
             <span class="mirror" title="Leader">L</span>
             <span class="mirror">I</span>
             <span class="mirror">T</span>
             <span class="mirror">E</span>
+          </div>
+          <p class="line-1 anim-typewriter">
+            Welcome To Elite - Where Ideas Become Future
+          </p>
+          <p class="line-2">
+            We people of Elite have the responsibility to share the knowledge to
+            the community
+          </p>
+          <a class="get" href="main.html">Get Started</a>
         </div>
-        <p class="line-1 anim-typewriter">Welcome To Elite - Where Ideas Become Future</p>
-        <p class="">We people of Elite have the responsibility to share the knowledge to the community</p>
-        <button><a href="main.html">Get Started</a></button>
-    </div>
-</div>
-    <div class="content">
+      </div>
+      <div class="content">
         <nav>
-            <h1>ELITE</h1>
-            <div class="ref">
-                <a href="">Home</a>
-                <a href="">Events</a>
-                <a href="">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
+          <h1>ELITE</h1>
+          <a class="hamburger_icon"
+            ><i class="fa-solid fa-bars fa-lg hamburger"></i
+          ></a>
+          <div class="ref">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
         </nav>
-    </div> 
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="hamburger_contents">
+        <a class="closebutton"><i class="fa-solid fa-xmark fa-lg"></i></a>
+        <div class="refe">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="socialss">
+          <div class="iconss">
+            <!-- <i class="fab fa-twitter"></i> -->
+
+            <i class="fab fa-instagram fa-lg"></i>
+
+            <i class="fab fa-linkedin fa-lg"></i>
+
+            <i class="fab fa-whatsapp fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
-        <div class="portfolio-experiment">
-            <a href="www.youtube.com" class="experiment-title" contenteditable="true">Upcmoing Events</a>
+      <div class="upcoming-events" >
+       <a href="www.youtube.com"> Upcoming Events </a> 
+      </div>
+      <div class="socials">
+        <p>Socials</p>
+        <p>-</p>
+        <div class="icons">
+          <!-- <i class="fab fa-twitter"></i> -->
+          <!-- <p>|</p> -->
+          <i class="fab fa-instagram"></i>
+          <p>|</p>
+          <i class="fab fa-linkedin"></i>
+          <p>|</p>
+          <i class="fab fa-whatsapp"></i>
         </div>
-        <div class="socials">
-            <p>Socials</p>
-            <p>-</p>
-            <div class="icons">
-                <i class="fab fa-twitter"></i><p>|</p>
-                <i class="fab fa-instagram"></i><p>|</p>
-                <i class="fab fa-linkedin"></i><p>|</p>
-                <i class="fab fa-whatsapp"></i> 
-        </div>
-        </div>
-        <div class="controls">
-            <p>Snake controls -</p>
-            <button id="restartButton">Restart</button>
-            <button id="toggleButton">Stop</button>
-        </div>
-        <div class="video">
-            <a href="https://www.instagram.com/reel/C6oZDN2y8cg/?igsh=cjFwYzVwZWxibDU5">Play Video</a>
-            <i class="fas fa-play"></i>
-        </div>
+      </div>
+      <div class="controls">
+          <p>Snake controls -</p>
+          <button id="restartButton">Restart</button>
+          <button id="toggleButton">Stop</button>
+      </div>
+      <div class="video">
+        <a
+          href="https://www.instagram.com/reel/C6oZDN2y8cg/?igsh=cjFwYzVwZWxibDU5"
+          >Play Video</a
+        >
+        <i class="fas fa-play"></i>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
