@@ -529,6 +529,8 @@ footer {
 }
 .aboutus img{
   border-radius: 50%;
+  height: 200px;
+  width: 200px;
   /* padding: 40px; */
   /* padding-top: 30px; */
 }
@@ -584,71 +586,3 @@ footer {
   margin-bottom: 10px;
 }
 
-
-
-/* Contact us styling*/
-.form-container{
-    position: relative;
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    background-color: #151515;
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
-  textarea{
-    height: 170px;
-  }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    border-color: #185c8e;
-    outline: none;
-  }
-  
-  textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  input,::placeholder{
-    color: white;
-  }
-  input,textarea{
-    color: white;
-  }
-  button {
-    background-color: #185c8e;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0f4a70;
-  }
-  
-  .hidden {
-    display: none;
-  }
-}
