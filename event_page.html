@@ -12,12 +12,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Elite Club</title>
 </head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+    .main{
+        position: relative;
+.title {
+    margin-left: 25%;
+width: 50%;
+margin-bottom: 40px;
+}
+.event-box {
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+color: #ffffff;
+border: 1px solid  rgb(45, 210, 207);
+padding: 20px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+width: 90%;
+max-width: 600px;
+align-items: center;
+text-align: center;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.event-box:hover {
+box-shadow: 0 4px 8px #a469e0;
+transform: translateY(-5px);
+}
+
+.img1{
+width: 50%;
+}
+/* Glowing hover effect for text */
+.img1:hover
+{  
+width:70%;
+color: #a469e0;
+transition: text-shadow 0.3s ease;
+}
+
+.event-hint {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+    .event-link {
+    display: block;
+    border: 2px solid rgb(45, 210, 207); 
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #c280fc;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.event-link:hover {
+    color: #ffffff;
+    background-color: #a469e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+    }
+</style>
 <body>
     <div class="blocks-container" id="blocks-container">
         <div id="blocks"></div>
     </div>
 
-    <div class="content">
+    <div class="content" style="backdrop-filter: blur(3px);">
         <nav>
           <h1>ELITE</h1>
           <a class="hamburger_icon"><i class="fa-solid fa-bars fa-lg hamburger"></i></a>
@@ -45,21 +119,20 @@
           </div>
         </div>
       </div>
-      
-    <h1 class="events_head">Events</h1>
-    <div class="events"> 
-         <div class="event">
-           
-         </div>
 
-        <div class="event">
-            <img src="./images/elite_events1.jpg" alt="">
-            <h1>Elite Club Succession ceremony</h1>
-            <!-- <h5 class="descr">an inauguration ceremony</h5> -->
-            <h5>Date: 10/5/2024</h5>
+<div class="main">
+    <img src="./jpg/UE.png" class="title">
+    <div class="event-box">
+        <div class="letter">
+            <img src="./jpg/techno_logo.png" class="img1"  >
+            <p class="event-hint">Event details:</p>
+            <p>Techno Kallos Design Sprint 2024, an exciting project contest organized by The Elite Club of the Department of Information Technology. Mark your calendars for this incredible opportunity to showcase your innovative projects and become the top innovators at REC!</p>
         </div>
-
+        <a href="./technokallos.html" class="event-link">Know More</a>
     </div>
+</div>
+
+
     <footer style="position: relative;">
         <div class="portfolio-experiment">
             <a href="www.youtube.com" class="experiment-title" contenteditable="true">Upcmoing Events</a>
