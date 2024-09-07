@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  
+  /* Wrapper and Entries */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .header{
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      object-fit: contain;
+    }
+  }
+  .title-image{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+   z-index: 99999;
+  }
+  
+  .entries {
+    width: calc(100% - 80px);
+    max-width: 800px;
+    position: relative;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+  
+  .entry {
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    text-align: right;
+    clear: both;
+  }
+  
+  .entry .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  
+  .entry .body {
+    color: #aaa;
+  }
+  
+  .entry:nth-child(2n) {
+    text-align: center;
+    float: right;
+  }
+  
+  /* Scrollbar Styling */
+  .wrapper::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .wrapper::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(45, 210, 207);
+    border-radius: 6px;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 960px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    /* .entry {
+      width: 100%;
+      text-align: center;
+      float: none;
+    } */
+    footer{
+        margin-top: 100px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .entries {
+      width: 100%;
+      padding: 0px;
+    }
+    .entry {
+      width: 100%;
+      margin-top: 20px;
+      text-align:center;
+      padding:10px;
+    }
+    .entry:nth-child(2n) {
+      text-align: center;
+    }
+  
+    .entry .title {
+      font-size: 24px;
+      text-align: center;
+    }
+    footer{
+        margin-top: 100px;
+    }
+  }
+  
