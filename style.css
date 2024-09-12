@@ -8,6 +8,13 @@ html,
 body {
   font-family: "Poppins", "Fraktion Mono";
 }
+* {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar for WebKit browsers */
+}
 
 img {
   width: 100%;
@@ -28,9 +35,11 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 1.5rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
+  height: 100px;
+  align-items: center;
 }
 
 nav a {
@@ -41,14 +50,26 @@ nav a {
   display: none;
 }
 
-nav h1 {
-  margin-left: 5rem;
-  font-size: 2.5rem;
-  color: white;
-  font-weight: 500;
-  font-family: monospace;
-  pointer-events: auto;
+.logo{
+  height: 100px;
+  width: 350px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  img{
+    height: 100px;
+    width: 300px;
+    object-fit: cover;
+  }
 }
+/* nav img{
+  margin-left: 5rem;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  pointer-events: auto;
+} */
 
 nav h1:hover {
   filter: drop-shadow(0px 5px 15px rgb(199, 47, 240));
@@ -317,6 +338,13 @@ footer {
     border-right-color: transparent;
   }
 }
+#restartButton , #toggleButton{
+  padding: 3px;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 100;
+}
+
 @media screen and (min-width:800px){
   footer{
    justify-content: space-around;
@@ -577,6 +605,9 @@ footer {
 .aboutusimg{
   padding: 40px;
   padding-bottom: 0px;
+  img{
+    object-fit: cover;
+  }
 }
 #linkedin-icon, #github-icon {
   color: white; /* Makes the icons white */
